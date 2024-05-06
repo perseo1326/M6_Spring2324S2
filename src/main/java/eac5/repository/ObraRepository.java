@@ -23,7 +23,7 @@ public interface ObraRepository extends JpaRepository<Obra,Integer> {
      * @param idMuseu identificador del museu on son les obres
      * @return llista de les obres del museu indicat
      */
-    List<Obra> findByMuseumId(@Param("idMuseu")int idMuseu);
+//    List<Obra> findByMuseumId(@Param("idMuseu")int idMuseu);
     
     
     /**
@@ -32,19 +32,19 @@ public interface ObraRepository extends JpaRepository<Obra,Integer> {
      * @param idObra identificador de l'obra restaurada
      * @param data  data de restauracio de l'obra
      */
-    void restore(@Param("idObra") int idObra, @Param("novaData") LocalDate data);
+//    void restore(@Param("idObra") int idObra, @Param("novaData") LocalDate data);
 
     /**
      *  Converteix l'amplada i l'alcada d'una obra de cm a metres
      */    
-    void convert2DUnits();
+//    void convert2DUnits();
     
     /**
      * Incremetenta en un percentatge determinat el valor de les obres d'un autor
      * @param autor autor de les obres de les quals se n'actualitzara el valor
      * @param percentatge percentatge d'increment que s'aplicara a les obres indicades
      */  
-    void increasesValue(@Param("autor") String autor, @Param("percentatge") double percentatge);  
+//    void increasesValue(@Param("autor") String autor, @Param("percentatge") double percentatge);
     
 }    
 
