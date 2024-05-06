@@ -6,6 +6,9 @@ package eac5.dao;
 
 import eac5.model.Escultura;
 import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
 import eac5.repository.EsculturaRepository;
 
 /**
@@ -16,6 +19,7 @@ import eac5.repository.EsculturaRepository;
 //TODO Afegir anotacions d'SpringBoot
 public class EsculturaDao {
    
+    @Autowired
     private EsculturaRepository esculturaRepository;
     
     /**

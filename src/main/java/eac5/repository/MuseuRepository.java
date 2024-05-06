@@ -9,12 +9,14 @@ import java.time.LocalDate;
 import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
+import org.springframework.stereotype.Repository;
 
 /**
  * Repositori per manegar els objectes de la classe Museu a la base de dades
  * @author docent
  */
 //TODO Completar la interfície
+@Repository
 public interface MuseuRepository extends JpaRepository<Museu,Integer> {
     /**
      * retorna els museus d'una ciutat

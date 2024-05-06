@@ -9,12 +9,14 @@ import java.time.LocalDate;
 import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
+import org.springframework.stereotype.Repository;
 
 /**
  * Repository per manegar els objectes de la classe Obra que son a la base de dades
  * @author docent
  */
 //TODO Completar la interfície
+@Repository
 public interface ObraRepository extends JpaRepository<Obra,Integer> {
     /**
      * Retorna la llista de les obres d'un museu

@@ -6,6 +6,9 @@ package eac5.dao;
 
 import eac5.model.Fotografia;
 import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
 import eac5.repository.FotografiaRepository;
 
 /**
@@ -15,6 +18,7 @@ import eac5.repository.FotografiaRepository;
 //TODO Afegir anotacions d'SpringBoot
 public class FotografiaDao {
     
+    @Autowired
     private FotografiaRepository fotografiaRepository;
     
     /**

@@ -16,6 +16,7 @@ import eac5.repository.PinturaRepository;
  */
 @Component
 public class PinturaDao {
+  
     @Autowired
     private PinturaRepository pinturaRepository;
     

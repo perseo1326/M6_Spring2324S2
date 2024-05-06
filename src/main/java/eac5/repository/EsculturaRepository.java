@@ -15,6 +15,7 @@ import eac5.model.Escultura;
 import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
+import org.springframework.stereotype.Repository;
 
 /**
  * Repository per manegar els objectes de la classe Escultura a la base de dades
@@ -22,6 +23,7 @@ import org.springframework.data.repository.query.Param;
  */
 
 //TODO Completar la interfície
+@Repository
 public interface EsculturaRepository extends JpaRepository<Escultura,Long> {
 
     /**

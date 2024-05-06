@@ -7,6 +7,9 @@ package eac5.dao;
 import eac5.gestors.GestorException;
 import eac5.model.Museu;
 import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
 import eac5.repository.MuseuRepository;
 import java.time.LocalDate;
 
@@ -17,6 +20,7 @@ import java.time.LocalDate;
 //TODO Afegir anotacions d'SpringBoot
 public class MuseuDao {
     
+    @Autowired
     private MuseuRepository museuRepository;
     
     /**
