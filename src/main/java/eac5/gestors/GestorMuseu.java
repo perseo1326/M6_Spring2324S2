@@ -37,7 +37,7 @@ public class GestorMuseu {
     public void inserir(Museu museu) throws GestorException {
  
 
-        // museuDao.inserir(museu);
+         museuDao.inserir(museu);
     }
 
     /**
@@ -60,8 +60,8 @@ public class GestorMuseu {
 
     public List<Museu> consultaMuseus() {
 
-    //    return museuDao.consultaTots();
-        return null;
+        return museuDao.consultaTots();
+//        return null;
     }
 
     /**

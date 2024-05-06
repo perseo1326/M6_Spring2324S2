@@ -12,6 +12,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import eac5.repository.MuseuRepository;
+import org.springframework.stereotype.Service;
+
 import java.time.LocalDate;
 
 /**
@@ -19,7 +21,7 @@ import java.time.LocalDate;
  * @author docent
  */
 //TODO Afegir anotacions d'SpringBoot
-@Component
+@Service
 public class MuseuDao {
     
     @Autowired
@@ -34,8 +36,10 @@ public class MuseuDao {
     public void inserir(Museu museu) throws GestorException {
 
        if(!museuRepository.existsById(museu.getId())){
-                museuRepository.save(museu);
+           Museu x = museuRepository.save(museu);
+           System.out.println("Museo ID: " + x.getId() +" NOMBRE: " + x.getNom());
        }else {
+           System.out.println("Museo duplicado: (" + museu.getId() + ") " + museu.getNom());
            throw new GestorException("Clau duplicada");
        }
      
@@ -62,9 +66,7 @@ public class MuseuDao {
      * @return la llista amb les museus
      */
     public List<Museu> consultaTots() {
-
-        // return museuRepository.findAll();
-        return null;
+        return museuRepository.findAll();
     }
 
     /**

@@ -34,7 +34,7 @@ public class GestorObra {
     public void inserir(Obra obra) throws GestorException {
 
 
-        // obraDao.inserir(obra);
+         obraDao.inserir(obra);
     }
 
     /**
@@ -44,7 +44,7 @@ public class GestorObra {
      * @throws GestorException si l'obra no existeix
      */
     public void eliminar(int id) throws GestorException {
-        // obraDao.elimina(id);
+         obraDao.elimina(id);
     }
 
     /**
@@ -53,8 +53,7 @@ public class GestorObra {
      * @return la llista d'obres
      */
     public List<Obra> consultaObres() {
-        // return obraDao.consultaObres();
-        return null;
+         return obraDao.consultaObres();
     }
 
     /**

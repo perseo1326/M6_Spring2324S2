@@ -84,7 +84,7 @@ public class TestGestors {
 
     private void netejaBD()  throws GestorException{
         
-        List<Museu> llistaMuseus= gestorMuseu.consultaMuseus();
+        List<Museu> llistaMuseus = gestorMuseu.consultaMuseus();
         List<Obra> llistaObres = gestorObra.consultaObres();
         
         for (Obra obra : llistaObres) {
@@ -146,24 +146,29 @@ public class TestGestors {
 
     @BeforeEach
     public void setUp() throws GestorException {
+//        TODO: esta funcion se va a ejecutar antes de cada test, por eso es una inicializacion
         inicialitzaDades();
     }
 
     @AfterEach
     public void tearDown() {
+//        TODO: esta funcion se ejecutara cada vez que se termine un test
     }
 
     @Test
     @Order(1)
     public void testAfegirMuseusAmbObres() throws GestorException {
-        inicialitzaDades();
+//        TODO: comentada la siguiente sentencia, la inicializacion se hace una vez por cada test con la anotacion '@BeforeEach'
+//        inicialitzaDades();
 
         assertThrows(GestorException.class, () -> {
             gestorMuseu.inserir(llistaMuseus.get(0));
         });
-        
+
+        // TODO: esta sentencia se repite, o quieres tratar de insertar otro ID??
         assertThrows(GestorException.class, () -> {
-            gestorObra.inserir(llistaObres.get(0));
+//            TODO: aqui le cambie el id de '0' -> '1'
+            gestorObra.inserir(llistaObres.get(1));
         });
 
     }
