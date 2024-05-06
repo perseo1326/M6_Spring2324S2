@@ -23,7 +23,7 @@ public interface MuseuRepository extends JpaRepository<Museu,Integer> {
      * @param ciutat nom de la ciutat
      * @return llista de les estacions
      */
-    List<Museu>findByCityName(@Param("ciutat")String ciutat);  
+    // List<Museu>findByCityName(@Param("ciutat")String ciutat);  
     
     /**
      * Actualitza la data de revisió de totes les obres d'un museu
@@ -31,6 +31,6 @@ public interface MuseuRepository extends JpaRepository<Museu,Integer> {
      * @param idMuseu id del museu a actaulitzar
      * @param data nova data de revisio de les obres del museu
      */
-    void updateArtWork(@Param("idMuseu")int idMuseu, @Param("novaData")LocalDate data);    
+    // void updateArtWork(@Param("idMuseu")int idMuseu, @Param("novaData")LocalDate data);    
     
 }

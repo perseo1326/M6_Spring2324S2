@@ -8,7 +8,7 @@ import eac5.model.Escultura;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework.stereotype.Component;
 import eac5.repository.EsculturaRepository;
 
 /**
@@ -17,6 +17,7 @@ import eac5.repository.EsculturaRepository;
  */
 
 //TODO Afegir anotacions d'SpringBoot
+@Component
 public class EsculturaDao {
    
     @Autowired

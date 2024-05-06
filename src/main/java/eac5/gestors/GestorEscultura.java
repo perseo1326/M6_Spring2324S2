@@ -20,8 +20,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class GestorEscultura {
 
-   @Autowired
-   EsculturaDao esculturaDao;
+    // TODO: adicionar private
+    @Autowired
+    private EsculturaDao esculturaDao;
 
     
     /**
@@ -32,7 +33,8 @@ public class GestorEscultura {
    
     public List<Escultura> consultaEscultures() {
 
-        return esculturaDao.consultaTotes();
+        // return esculturaDao.consultaTotes();
+        return null;
     }
     
     
@@ -42,7 +44,8 @@ public class GestorEscultura {
      * @return la llista d'esculturess amb el pes minim seleccionat
      */
     public List<Escultura> consultaEscultures(double minPes) {
-        return esculturaDao.consultaMesPesadesQue(minPes);
+        // return esculturaDao.consultaMesPesadesQue(minPes);
+        return null;
     }    
     
 }

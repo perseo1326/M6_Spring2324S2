@@ -30,7 +30,8 @@ public class GestorPintura {
      */
     public List<Pintura> consultaPintures() {
 
-        return pinturaDao.consultaPintures();
+        // return pinturaDao.consultaPintures();
+        return null;
     }
 
    /**
@@ -42,7 +43,8 @@ public class GestorPintura {
      */
     public List<Pintura> consultaPintures(double minSup, double maxSup) {
 
-        return pinturaDao.consultaPinturesPerSuperficie(minSup, maxSup);
+        // return pinturaDao.consultaPinturesPerSuperficie(minSup, maxSup);
+        return null;
     }
 }
 

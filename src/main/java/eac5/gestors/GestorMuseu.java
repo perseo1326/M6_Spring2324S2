@@ -37,7 +37,7 @@ public class GestorMuseu {
     public void inserir(Museu museu) throws GestorException {
  
 
-        museuDao.inserir(museu);
+        // museuDao.inserir(museu);
     }
 
     /**
@@ -48,7 +48,7 @@ public class GestorMuseu {
      */
     public void eliminar(int id) throws GestorException {
 
-       museuDao.eliminar(id);
+    //    museuDao.eliminar(id);
     }
     
     
@@ -60,7 +60,8 @@ public class GestorMuseu {
 
     public List<Museu> consultaMuseus() {
 
-       return museuDao.consultaTots();
+    //    return museuDao.consultaTots();
+        return null;
     }
 
     /**
@@ -72,7 +73,8 @@ public class GestorMuseu {
 
     public List<Museu> consultaMuseus(String ciutat) {
 
-       return museuDao.consultaTotsDe(ciutat);
+    //    return museuDao.consultaTotsDe(ciutat);
+        return null;
     }
 
     /**
@@ -83,7 +85,7 @@ public class GestorMuseu {
      * @throws eac3.gestors.GestorException si no hi ha cap museu amb l'identificador indicat
      */
     public void actualitzaDataRevisio(int id, LocalDate data) throws GestorException {
-        museuDao.actualitzaDataRevisio(id,data);
+        // museuDao.actualitzaDataRevisio(id,data);
     }
 
 }

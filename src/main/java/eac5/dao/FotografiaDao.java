@@ -8,7 +8,7 @@ import eac5.model.Fotografia;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework.stereotype.Component;
 import eac5.repository.FotografiaRepository;
 
 /**
@@ -16,6 +16,7 @@ import eac5.repository.FotografiaRepository;
  * @author docent
  */
 //TODO Afegir anotacions d'SpringBoot
+@Component
 public class FotografiaDao {
     
     @Autowired
@@ -39,7 +40,9 @@ public class FotografiaDao {
      */
     public List<Fotografia> consultaSegonsColor(boolean color) {
 
-        return fotografiaRepository.findAllAccordingColor(color);
+        // return fotografiaRepository.findAllAccordingColor(color);
+        return null;
+        
     }
     
     

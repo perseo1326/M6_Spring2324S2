@@ -24,5 +24,6 @@ public interface FotografiaRepository extends JpaRepository<Fotografia,Long> {
      * @param color true si tenen color, false si no tenen color
      * @return llista de fotografies amb el color especificat
      */
-    List<Fotografia> findAllAccordingColor(@Param("color")boolean color);    
+    // List<Fotografia> findAllAccordingColor(@Param("color")boolean color);
+
 }    

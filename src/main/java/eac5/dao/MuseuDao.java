@@ -9,6 +9,7 @@ import eac5.model.Museu;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import eac5.repository.MuseuRepository;
 import java.time.LocalDate;
@@ -18,6 +19,7 @@ import java.time.LocalDate;
  * @author docent
  */
 //TODO Afegir anotacions d'SpringBoot
+@Component
 public class MuseuDao {
     
     @Autowired
@@ -47,11 +49,11 @@ public class MuseuDao {
      */
     public void eliminar(int id) throws GestorException {
 
-       if(museuRepository.existsById(id)){
-            museuRepository.deleteById(id);
-       }else {
-           throw new GestorException("Clau inexistent");
-       }      
+    //    if(museuRepository.existsById(id)){
+    //         museuRepository.deleteById(id);
+    //    }else {
+    //        throw new GestorException("Clau inexistent");
+    //    }      
     }
 
     /**
@@ -61,7 +63,8 @@ public class MuseuDao {
      */
     public List<Museu> consultaTots() {
 
-        return museuRepository.findAll();
+        // return museuRepository.findAll();
+        return null;
     }
 
     /**
@@ -72,7 +75,8 @@ public class MuseuDao {
      */
     public List<Museu> consultaTotsDe(String ciutat) {
 
-        return museuRepository.findByCityName(ciutat);
+        // return museuRepository.findByCityName(ciutat);
+        return null;
     }
 
     /**
@@ -82,12 +86,12 @@ public class MuseuDao {
      * @param data nova data revisio de les obres
      * @throws eac3.gestors.GestorException si no hi ha cap museu amb l'identificador indicat
      */
-    public void actualitzaDataRevisio(int idMuseu, LocalDate data) throws GestorException {
+    // public void actualitzaDataRevisio(int idMuseu, LocalDate data) throws GestorException {
 
-       if(museuRepository.existsById(idMuseu)){
-            museuRepository.updateArtWork(idMuseu, data);
-       }else {
-           throw new GestorException("Clau inexistent");
-       }  
-    }
+    //    if(museuRepository.existsById(idMuseu)){
+    //         // museuRepository.updateArtWork(idMuseu, data);
+    //    }else {
+    //        throw new GestorException("Clau inexistent");
+    //    }  
+    // }
 }

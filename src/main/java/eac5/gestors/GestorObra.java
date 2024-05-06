@@ -34,7 +34,7 @@ public class GestorObra {
     public void inserir(Obra obra) throws GestorException {
 
 
-        obraDao.inserir(obra);
+        // obraDao.inserir(obra);
     }
 
     /**
@@ -44,7 +44,7 @@ public class GestorObra {
      * @throws GestorException si l'obra no existeix
      */
     public void eliminar(int id) throws GestorException {
-        obraDao.elimina(id);
+        // obraDao.elimina(id);
     }
 
     /**
@@ -53,7 +53,8 @@ public class GestorObra {
      * @return la llista d'obres
      */
     public List<Obra> consultaObres() {
-        return obraDao.consultaObres();
+        // return obraDao.consultaObres();
+        return null;
     }
 
     /**
@@ -64,7 +65,8 @@ public class GestorObra {
      * @throws GestorException si el museu no existeix
      */
     public List<Obra> consultaObres(int idMuseu) throws GestorException {
-        return obraDao.consultaTotesDe(idMuseu);
+        // return obraDao.consultaTotesDe(idMuseu);
+        return null;
     }
 
     /**
@@ -76,14 +78,14 @@ public class GestorObra {
      *
      */
     public void actualitzaDataRestauracio(int id, LocalDate data) throws GestorException {
-        obraDao.actualitzaDataRestauracio(id, data);
+        // obraDao.actualitzaDataRestauracio(id, data);
     }
 
     /**
      * Converteix totes l'amplada i l'alcada de totes les obres de cm a m
      */
     public void convertirCmAm() {
-        obraDao.convertirCmAm();
+        // obraDao.convertirCmAm();
     }
 
     /**
@@ -93,6 +95,6 @@ public class GestorObra {
      * @param percentatge el percentatge d'increment
      */
     public void revalora(String autor, int percentatge) {
-        obraDao.revalora(autor, percentatge);
+        // obraDao.revalora(autor, percentatge);
     }
 }

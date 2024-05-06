@@ -10,6 +10,7 @@ import eac5.repository.EsculturaRepository;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import eac5.repository.MuseuRepository;
 import eac5.repository.ObraRepository;
@@ -20,6 +21,7 @@ import java.time.LocalDate;
  * @author docent
  */
 //TODO Afegir anotacions d'SpringBoot
+@Component
 public class ObraDao {
     
     @Autowired

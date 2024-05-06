@@ -31,7 +31,8 @@ public class GestorFotografia {
      */
     public List<Fotografia> consultaFotografies() {
 
-       return fotografiaDao.consultaTotes();
+      //  return fotografiaDao.consultaTotes();
+      return null;
     }
 
     /**
@@ -41,7 +42,8 @@ public class GestorFotografia {
      * @return llista de fotografies amb el color especificat
      */
     public List<Fotografia> consultaFotografies(boolean color) {
-       return fotografiaDao.consultaSegonsColor(color);
+      //  return fotografiaDao.consultaSegonsColor(color);
+       return null;
         
     }
 
