@@ -1,3 +1,2 @@
 target/
-target/classes/
-target/classes/eac5/dao/FotografiaDao.class
+target/classes/application.properties
